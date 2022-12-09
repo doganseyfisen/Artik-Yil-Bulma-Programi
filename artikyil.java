@@ -14,7 +14,7 @@ public class Driver {
 		System.out.print("Girdiğiniz yılın artık yıl olup olmadığını öğrenin.\nYıl girin: ");
 		year = input.nextInt();
 		
-		if(year%4==0 && year%400==0) {
+		if(year%4==0 && year%100!=0 || year%400==0) {
 			System.out.println(year + " yılı bir artık yıldır.");
 		} else {
 			System.out.println(year + " yılı bir artık yıl değildir.");
